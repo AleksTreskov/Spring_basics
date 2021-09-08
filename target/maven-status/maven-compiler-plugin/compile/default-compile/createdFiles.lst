@@ -1,0 +1,12 @@
+ru\gb\prev\Order.class
+ru\gb\prev\ProductRepository.class
+ru\gb\current\WebMvcApplicationConfig.class
+ru\gb\prev\Product.class
+ru\gb\prev\SpringApplication.class
+ru\gb\current\FirstWebApplicationInitializer.class
+ru\gb\prev\Cart.class
+ru\gb\current\RootWebApplicationConfig.class
+ru\gb\current\controller\OrderController.class
+ru\gb\prev\CartConfiguration.class
+ru\gb\current\controller\ProductController.class
+ru\gb\prev\OrderRepository.class
