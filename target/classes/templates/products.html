@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Products</h1>
+<!--    <ul>-->
+<!--      <li :each="product : ${products}">-->
+<!--          <div>${product.id()}</div>-->
+<!--          <div>${product.name()}</div>-->
+<!--          <div>${product.price()}</div>-->
+<!--      </li>-->
+<!--    </ul>-->
+
+<table>
+    <tbody>
+    <tr th:if="${products.empty}">
+        <td colspan="2"> No Products Available</td>
+    </tr>
+    <tr th:each="product : ${products}">
+        <form action="#" th:action="@{/products/mvc}" method="DELETE" th:object="${product}">
+        <td><span th:text="${product.id}"> ID </span></td>
+        <td><span th:text="${product.name}"> NAME </span></td>
+        <td><span th:text="${product.price}"> PRICE </span><input type="submit" value="Delete"></td> <br/>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>
